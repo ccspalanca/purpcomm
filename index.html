@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purposive Communication E-Portfolio</title>
+
+  <style>
+    /* Header styles */
+    header {
+      background-color: #333;
+      padding: 20px 0;
+      color: #f2f2f2;
+      text-align: center;
+      width: 100%;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Navigation styles */
+    .drawer {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 160px;
+      overflow-x: hidden;
+      transition: 0.1s ease-in-out;
+    }
+
+    .drawer a {
+      text-decoration: none;
+      color: #f2f2f2;
+      margin: 10px 0;
+      font-weight: bold;
+      display: block;
+      padding: 5px;
+    }
+
+    .drawer a:hover {
+      background-color: #4d4d4d;
+    }
+
+    /* Drawer toggle button styles */
+    .drawer-btn {
+      cursor: pointer;
+      font-size: 18px;
+      background-color: #333;
+      color: #f2f2f2;
+      border: none;
+      padding: 15px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Purposive Communication E-Portfolio</h1>
+  </header>
+
+  <button id="drawer-btn" class="drawer-btn">&#9776; Menu</button>
+
+  <nav id="drawer" class="drawer">
+    <a href="lesson1.html">Lesson 1</a>
+    <a href="lesson2.html">Lesson 2</a>
+    <a href="lesson3.html">Lesson 3</a>
+    <a href="lesson4.html">Lesson 4</a>
+    <a href="lesson5.html">Lesson 5</a>
+    <a href="lesson6.html">Lesson 6</a>
+    <a href="lesson7.html">Lesson 7</a>
+    <a href="lesson8.html">Lesson 8</a>
+    <a href="lesson9.html">Lesson 9</a>
+    <a href="lesson10.html">Lesson 10</a>
+    <a href="lesson11.html">Lesson 11</a>
+    <a href="lesson12.html">Lesson 12</a>
+    <a href="lesson13.html">Lesson 13</a>
+  </nav>
+
+  <p>Welcome to our Purposive Communication E-Portfolio!</p>
+  <p>Please select a section from the navigation bar.</p>
+
+  <script>
+    document.getElementById("drawer-btn").onclick = function() {
+      var drawer = document.getElementById("drawer");
+      drawer.style.display = drawer.style.display === "block" ? "none" : "block";
+    };
+  </script>
+
+</body>
+</html>
